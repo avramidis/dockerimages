@@ -2,7 +2,7 @@ FROM ubuntu:19.10
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y apt-utils
 RUN apt-get upgrade -y
-RUN apt-get install -y build-essential libssl-dev wget python3 python3-dev python3-pip python3-tk python3-numpy python3-matplotlib
+RUN apt-get install -y build-essential libssl-dev wget git python3 python3-dev python3-pip python3-tk python3-numpy python3-matplotlib
 WORKDIR /home
 RUN mkdir cmake
 WORKDIR cmake
